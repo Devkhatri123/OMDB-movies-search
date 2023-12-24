@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+body{
+    margin: 0;
+    background-color: #e1e1e1;
+    font-family: Poppins;
+}
+.background_container{
+    background-image: url(thetare.jpg);
+    height: 178px;
+}
+.inner_div_Container{
+    display: flex;
+    justify-content: center;
+    height: inherit;
+    color: white;
+    align-items: center;
+    gap: 127px;
+}
+.inner_div_Container h1{
+    font-size: 45px;
+    font-family: Poppins;
+}
+.inner_div_Container a{
+    text-decoration: none;
+    color: white;
+    font-family: Poppins;
+    font-size: 28px;
+}
+.input{
+    /* background: white; */ 
+    border: none;
+    margin-top: -16px;
+    /* padding: 13px; */
+    border-radius: 4px;
+    width: 50%;
+    margin-top: -21px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: baseline;
+}
+input {
+    /* min-width: 600px; */
+    background: white;
+    border: none;
+    margin-top: 2px;
+    padding: 13px;
+    border-radius: 4px;
+    /* width: 50%; */
+    width: -webkit-fill-available;
+    outline: none;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+.movies_container{
+    margin-top: 15px;
+    /* max-width: 62%; */
+    /* display: flex; */
+    gap: 17px;
+    /* margin-left: 32%; */
+    /* padding-left: 16%; */
+    /* justify-content: center;
+    display: grid;
+    grid-template-columns: 226px 258px 200px; */
+    display: flex;
+    flex-wrap: wrap;
+    margin: 12px auto 0px auto;
+    width: 53%;
+    justify-content: center;
+    font-family: Poppins;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.movie{
+    width: fit-content;
+    background: white;
+    margin-bottom: 13px;
+}
+.movie img{
+    height: 292px;
+    width: 190px;
+    border-radius: 26px;
+    object-fit: fill;
+    padding: 17px;
+}
+.title{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding-left: 11px;
+    padding-right: 11px;
+    max-width: 200px;
+}
+.title h4{
+    margin-top: 5px;
+    font-size: 12.4px;
+}
+
+@media screen and (min-width: 50px) {
+    .inner_div_Container{
+        flex-direction: column;
+        gap: 0px;
+    }
+    .inner_div_Container h1{
+        font-size: 15px;
+        text-align: center;
+    }
+    .inner_div_Container a{
+        font-size: 17px;
+    }
+    .movie img{
+        width: -webkit-fill-available;
+        height: 183px;
+        padding: 10px;
+        border-radius: 15px
+    };
+    .background_container {
+        width: fit-content;
+    }
+    .movie{
+        max-width: 129px;
+    }
+}
+@media screen and (min-width: 280px) {
+     .movies_container{
+     
+    gap: 9px;
+   width: unset;
+    }
+}
+@media screen and (min-width: 430px) {
+    .movies_container{
+     width: 95%;
+   }
+   .inner_div_Container h1{
+    font-size: 31px;
+   }
+   .inner_div_Container a{
+    font-size: 25px;
+   }
+}
+@media screen and (min-width: 572px) {
+    .movies_container{
+        width: 87%%;
+   }
+   .inner_div_Container{
+    gap: 67px;
+    flex-direction: row;
+   }
+   .inner_div_Container h1{
+    font-size: 30px;
+   }
+   .inner_div_Container a{
+    font-size: 25px;
+   }
+   .movie{
+    max-width: unset;
+   }
+.movie img{
+    width: 212px;
+    height: 293px;
+} 
+}
+@media screen and (min-width:987px) {
+    .movies_container{
+        width: 73%;
+
+   }
+   .movie{
+    max-width: unset;
+   }
+.movie img{
+    width: 212px;
+    height: 293px;
+} 
+}

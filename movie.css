@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+html{
+    width: -webkit-fill-available;
+    overflow-x: hidden;
+}
+body {
+    font-family: Poppins;
+    background-color: #e1e1e1;
+    margin: 0;
+}
+
+.background_container {
+    background-image: url(thetare.jpg);
+    height: 178px;
+}
+
+.inner_div_Container {
+    display: flex;
+    justify-content: center;
+    height: inherit;
+    color: white;
+    align-items: center;
+    gap: 127px;
+}
+
+.inner_div_Container h1 {
+    font-size: 45px;
+    font-family: Poppins;
+}
+
+.inner_div_Container a {
+    text-decoration: none;
+    color: white;
+    font-family: Poppins;
+    font-size: 28px;
+}
+
+.movie_container {
+    max-width: 632px;
+    display: flex;
+    background: white;
+    /* margin: 0 auto; */
+    justify-content: center;
+    margin: 20px auto 0 auto;
+    border-radius: 6px;
+    box-shadow: 1px 2px #a1a1a1;
+}
+
+.left_movie_pic {
+    width: 50%;
+    margin-top: 20px;
+    margin-right: 34px;
+    margin-left: 26px;
+}
+
+.left_movie_pic img {
+    border-radius: 5px;
+    /* width: auto; */
+    max-width: 195px;
+}
+
+.movie_details {
+    width: 100%;
+}
+
+.movie_details>div {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 89%;
+}
+
+p {
+    font-size: 15px;
+}
+
+@media screen and (max-width:568px) {
+    body {
+        overflow-x: hidden;
+        margin: 0;
+    }
+    .container{
+        width: -webkit-fill-available;
+    }
+    .movie_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .movie_details {
+        padding-left: 20px;
+    }
+
+    .left_movie_pic {
+        width: auto;
+        display: flex;
+        justify-content: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .inner_div_Container {
+        display: flex;
+        justify-content: center;
+        height: inherit;
+        color: white;
+        align-items: center;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .movie_container {
+        max-width: 632px;
+        display: flex;
+        background: white;
+        justify-content: center;
+        margin: 20px auto 0px;
+        border-radius: 6px;
+        align-items: center;
+        width: -webkit-fill-available;
+    }
+
+    .inner_div_Container h1 {
+        font-size: 31px;
+        text-align: center;
+    }
+
+    .inner_div_Container a {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 70%;
+        max-width: 94%;
+    }
+    .left_movie_pic img{
+        max-width: 126px;
+    }
+}

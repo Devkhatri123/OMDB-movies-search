@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+
+body {
+    margin: 0;
+    background-color: #e1e1e1;
+}
+
+.background_container {
+    background-image: url(thetare.jpg);
+    height: 178px;
+}
+
+.inner_div_Container {
+    display: flex;
+    justify-content: center;
+    height: inherit;
+    color: white;
+    align-items: center;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.inner_div_Container h1 {
+    font-family: Poppins;
+    font-size: 31px;
+}
+
+.inner_div_Container a {
+    text-decoration: none;
+    color: white;
+    font-family: Poppins;
+    font-size: 21px;
+}
+
+.input {
+    border: none;
+    margin-top: -16px;
+    border-radius: 4px;
+    width: 39%;
+    margin-top: -21px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: baseline;
+}
+
+input {
+    /* min-width: 600px; */
+    background: white;
+    border: none;
+    margin-top: -16px;
+    padding: 13px;
+    border-radius: 4px;
+    /* width: 50%; */
+    width: -webkit-fill-available;
+    outline: none;
+}
+
+.movies_container {
+    margin-top: 15px;
+    gap: 17px;
+    justify-content: center;
+    font-family: Poppins;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 12px auto 0px auto;
+    width: 71%;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.movie {
+    width: fit-content;
+    background: white;
+}
+
+.movie img {
+    height: 292px;
+    width: 190px;
+    border-radius: 26px;
+    object-fit: fill;
+    padding: 17px;
+}
+
+.title {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding-left: 11px;
+    padding-right: 11px;
+}
+
+.inner_div_Container h1 {
+    margin-top: 5px;
+    font-size: 19px;
+    /* max-width: 179px; */
+    text-align: center
+};
+.title>a> h4{
+    font-size: 14px;
+    max-width: 188px;
+}
+@media screen and (max-width:654px) {
+     .movie img{
+        height: 232px;
+        width: 163px;
+    }
+    .inner_div_Container h1{
+        max-width: 156px;
+    }
+}
