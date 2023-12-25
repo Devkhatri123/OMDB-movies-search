@@ -126,7 +126,9 @@ async function FavouriteMovies(){
         }
         container.innerHTML+=` <div class="movie">
         <a href="movie.html?id=${res.imdbID}">
+        <div>
         <img src="${img}" alt="">
+        </div>
         <div class="title">
         <h4>${res.Title}</h4>
         </a>
