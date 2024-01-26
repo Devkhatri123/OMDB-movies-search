@@ -114,7 +114,7 @@ async function FavouriteMovies(){
 
      for(i in localStorage){
       let id = localStorage.getItem(i);
-     if(id!=null){
+     if(id!=null && id!=undefined){
     const url = await `https://www.omdbapi.com/?i=${id}&page=1&apikey=c2f2659d`;
     await fetch(url).then((res)=>{
         return res.json();
