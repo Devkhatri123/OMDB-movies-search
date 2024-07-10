@@ -109,10 +109,7 @@ async function FavouriteMovies(){
     container.innerHTML="";
     var img;
    
-
-    
-
-     for(i in localStorage){
+  for(i in localStorage){
       let id = localStorage.getItem(i);
      if(id!=null && id!=undefined){
     const url = await `https://www.omdbapi.com/?i=${id}&page=1&apikey=c2f2659d`;
@@ -139,11 +136,9 @@ async function FavouriteMovies(){
     })
 }
      }
-}//id==localStorage.getItem(i)
+}
 function RemoveFavouriteMovie(id){
-    
   for (i in localStorage){
-
     if(localStorage.getItem(i).includes(id)){
         localStorage.removeItem(id);
         break;
